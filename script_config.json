@@ -1,0 +1,486 @@
+{
+    "scriptConfig": {
+        "enableConnectionDebug": true,
+        "botInteractions": {
+            "status": {
+                "showStatus": true,
+                "showPlayers": true
+            },
+            "leaveAndJoinProcess": {
+                "removeWhitelistAfterLeaveServer": true,
+                "kickMessageAfterLeaveServer": "Você saiu do servidor do discord e perdeu sua whitelist, ingresse novamente para recebe-la de volta!",
+                "addWhitelistAfterRejoinServer": true,
+                "addNameAfterRejoinServer": true,
+                "addRolesAfterRejoinServer": true,
+                "rejoinAddRoles": ["891622737519472680"],
+                "rejoinRemoveRoles": ["891620275819536415","1250443334573625354"],
+                "setDefaultNameInNewMembers": true,
+                "defaultName": "Individuo Indigente",
+                "setDefaultRolesInNewMembers": true,
+                "defaultRoles": ["891620275819536415"]
+            },
+            "whitelist": {
+                "command": "whitelist",
+                "commandDescription": "Liberar id no servidor!",
+                "locate": 2,
+                "mode": 3,
+                "startChannelId": "1250437185551859833",
+                "sendChannelId": "1250437211900346479",
+                "statusChannelId": "1250437254074339349",
+                "messageText": "**Whitelist**\n\nSeja bem-vindo à cidade!\n\n> **Para iniciar sua whitelist, basta clicar no botão abaixo**!\n\nBoa sorte!",
+                "messageColor": "#2986cc",
+                "buttonText": "Iniciar whitelist",
+                "buttonEmoji": "📋",
+                "buttonApproveText": "Aprovar",
+                "buttonApproveEmoji": "✅",
+                "buttonReproveText": "Reprovar",
+                "buttonReproveEmoji": "❌",
+                "joinServerButtonMessage": "Entrar no servidor",
+                "joinServerButtonEmoji": "🎮",
+                "questions": [
+                    {
+                        "question": "O que é power-gaming?",
+                        "response": 3,
+                        "options": {
+                            "1": "É o poder do jogo.",
+                            "2": "É Matar alguém sem motivo.",
+                            "3": "É Fazer algo que não é possível na vida real e abusar da física do jogo.",
+                            "4": "É sair do servidor enquanto está participando de uma ação."
+                        }
+                    },
+                    {
+                        "question": "O que é combat logging?",
+                        "response": 4,
+                        "options": {
+                            "1": "É matar alguém ao entrar no servidor.",
+                            "2": "É matar alguém sem motivo.",
+                            "3": "É matar alguém atropelado.",
+                            "4": "É sair do servidor enquanto está participando de uma ação."
+                        }
+                    }
+                ],
+                "needPercent": 60,
+                "timeToNewAttempt": 30,
+                "addRolesAfterApproveForInterview": ["1250443334573625354"],
+                "removeRolesAfterApproveForInterview": ["891620275819536415"],
+                "addRolesAfterApprove": ["891622737519472680"],
+                "removeRolesAfterApprove": ["891620275819536415","1250443334573625354"],
+                "startMessageText": "**Whitelist**\n\n> Sua whitelist inicia aqui!\n\nSe o seu identificador ID corresponder a `${id}` clique em ✅ para iniciar.\nCaso contrario encerre a whitelist clicando em ❌ e contate nossa equipe!\n\nBoa sorte!",
+                "messageIdNotFound": "**Whitelist**\n\n> Não conseguimos identificar seu id vinculado a está conta do discord!\n\nEntre no jogo com uma conta nova e com o discord ativo em seu computador e vinculado ao FiveM, após tente novamente!\n\nBoa sorte!",
+                "messageServerOff": "**Whitelist**\n\n> Nosso servidor não está online no momento!\nTente novamente mais tarde!",
+                "messageTimeExceeded": "**Whitelist**\n\n> O tempo limite de 15 minutos para realizar a whitelist foi excedido e sua whitelist foi encerrada!\nTente novamente e seja mais rápido!",
+                "messageNotFinded": "**Whitelist**\n\n> Sua whitelist não foi encontrada ou não foi iniciada\nPor favor inicie novamente!",
+                "messageFinish": "**Whitelist**\n\n> Você respondeu todas as respostas, aguarde alguns segundos em quanto analisamos sua pontuação!",
+                "messageWaitForInterview": "**Whitelist**\n\n> Você foi aprovado para nossa entrevista entre no canal <#1250841988329115810> nos horários de atendimento para que possamos fazer uma breve avaliação!\n\n**Horários de avaliação (Segunda a sexta das 13:00 as 20:00 horas).**",
+                "messageApproved": "**Whitelist**\n\n> Você foi aprovado no sistema de whitelist e liberado em nosso servidor\n Lhe desejamos uma ótima jogatina!",
+                "messageReproved": "**Whitelist**\n\n> Infelizmente você não passou pelo nosso sistema, você poderá tentar novamente em: **${minutes} minutos**",
+                "messageCountDown": "**Whitelist**\n\n> Você fez uma whitelist recente e terá que aguardar para fazer outra novamente!\nnova tentativa disponível em: **${minutes} minutos**",
+                "messageAlreadyInProgress": "**Whitelist**\n\n> Você já tem uma whitelist ativa termine-a ou aguarde 15 minutos para que ela seja encerrada automaticamente e tente novamente.",
+                "messageGameOnly": "**Whitelist**\n\n> Nossa whitelist esta sendo feita apenas no jogo no momento\nEntre agora mesmo para realiza-la!**",
+                "messageGameWait": "**Whitelist**\n\n> Nossa whitelist esta sendo feita no jogo no momento\n\nEntre agora mesmo para realiza-la!\nApós basta ficar de olho aqui no discord para saber se você foi aprovado ou tera que fazer uma entrevista.",
+                "messageWaitApprobation": "**Nova whitelist**\n\n> <@${discordId}> Esta aguardando a entrevista\n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`\n\n**Ao efetuar a entrevista aprove ou reprove o mesmo nos botões abaixo**",
+                "messageUserApproved": "**whitelist**\n\n> <@${discordId}> Foi aprovado no sistema de whitelist \n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`",
+                "messageUserReproved": "**whitelist**\n\n> <@${discordId}> Foi reprovado no sistema de whitelist \n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`"
+            },
+            "updateRoles": {
+                "enable": true,
+                "updateMinutes": 60,
+                "roles": [
+                    {
+                        "role": "1253706769629450344",
+                        "groups": ["PoliciaI", "AcaoPoliciaI", "PaisanaPoliciaI", "PoliciaII", "AcaoPoliciaII", "PaisanaPoliciaII", "PoliciaIII", "AcaoPoliciaIII", "PaisanaPoliciaIII", "Policialider", "AcaoPolicialider", "PaisanaPolicialider"] 
+                    },
+                    {
+                        "role": "1253706923954671616",
+                        "groups": ["ParamedicoI", "ParamedicoII", "ParamedicoIII", "PaisanaParamedicoI", "PaisanaParamedicoII", "PaisanaParamedicoIII", "Paramedicolider", "PaisanaParamedicolider"] 
+                    },
+                    {
+                        "role": "1253706939217481778",
+                        "groups": ["Bombeiro", "Bombeirolider", "PaisanaBombeiro", "PaisanaBombeirolider"] 
+                    },
+                    {
+                        "role": "1253706943134961755",
+                        "groups": ["Ballas", "Ballaslider", "Grove", "Grovelider", "Blood", "Bloodlider", "Vagos", "Vagoslider"] 
+                    },
+                    {
+                        "role": "1253706946226294865",
+                        "groups": ["Ballas", "Ballaslider"] 
+                    },
+                    {
+                        "role": "1253706948986273956",
+                        "groups": ["Grove", "Grovelider"] 
+                    },
+                    {
+                        "role": "1253706952111030323",
+                        "groups": ["Blood", "Bloodlider"] 
+                    },
+                    {
+                        "role": "1253706968586129461",
+                        "groups": ["Vagos", "Vagoslider"] 
+                    }
+                ]
+            },
+            "allowedOrgs": {
+                "enable": true,
+                "updateMinutes": 60,
+                "orgsMessage": [
+                    {   
+                        "channelId": "770718058612260904",
+                        "preset": "Facs-1",
+                        "messageTitle": "Facções disponíveis:",
+                        "messageDescription": "Abaixo está a lista das facções disponíveis para serem assumidas com uma breve descrição",
+                        "messageNotFinded": "Não temos nenhuma facção disponível no momento! ",
+                        "messageColor": "#2986cc",
+                        "orgs": [
+                            {
+                                "groups": [ "Ballas", "Ballaslider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Ballas",
+                                "description": "Facção responsavel pela produção e distribuição de #maconha"
+                            },
+                            {
+                                "groups": [ "Grove", "Grovelider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Grove",
+                                "description": "Facção responsavel pela produção e distribuição de #metanfetamina"
+                            },
+                            {
+                                "groups": [ "Blood", "Bloodlider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Blood",
+                                "description": "Facção responsavel pela produção e distribuição de #lsd"
+                            },
+                            {
+                                "groups": [ "Vagos", "Vagoslider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Vagos",
+                                "description": "Facção responsavel pela produção e distribuição de #cocaína"
+                            }
+                        ]
+                    },
+                    {   
+                        "channelId": "770718058612260904",
+                        "preset": "Orgs-1",
+                        "messageTitle": "Organizações disponíveis:",
+                        "messageDescription": "Abaixo está a lista das organizações disponíveis para serem assumidas com uma breve descrição",
+                        "messageNotFinded": "Não temos nenhuma organização disponível no momento! ",
+                        "messageColor": "#2986cc",
+                        "orgs": [
+                            {
+                                "groups": [ "PoliciaI", "AcaoPoliciaI", "PaisanaPoliciaI", "PoliciaII", "AcaoPoliciaII", "PaisanaPoliciaII", "PoliciaIII", "AcaoPoliciaIII", "PaisanaPoliciaIII", "Policialider", "AcaoPolicialider", "PaisanaPolicialider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Departamento de polícia",
+                                "description": "O departamento de polícia é responsavel por estabelecer a ondem na cidade."
+                            },
+                            {
+                                "groups": [ "ParamedicoI", "ParamedicoII", "ParamedicoIII", "PaisanaParamedicoI", "PaisanaParamedicoII", "PaisanaParamedicoIII", "Paramedicolider", "PaisanaParamedicolider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Hospital",
+                                "description": "O hospital é responsavel pela internação e tratamento de doentes ou de feridos"
+                            },
+                            {
+                                "groups": [ "Bombeiro", "Bombeirolider", "PaisanaBombeiro", "PaisanaBombeirolider"],
+                                "fromNumberOfMembers": 0,
+                                "exhibitName": "Corpo de bombeiros",
+                                "description": "O corpo de bombeiros é responsavel pela prevenção e Combate a Incêndios, Buscas, Salvamentos e Socorros Públicos"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "suggestion": {
+                "command": "sugerir",
+                "commandDescription": "Faça sua sugestão.",
+                "sendChannelId": "770718058612260904",
+                "sendMessageText": "**Sugestão**\n\nPara nos enviar uma sugestão, basta apertar o botão ou utilizar o comando abaixo em qualquer canal de texto\n\n`/sugerir`",
+                "sendMessageColor": "#2986cc",
+                "sendMessageButtonText": "Sugerir",
+                "sendMessageButtonEmoji": "🗣️",
+                "titleLabel": "Escreva o titulo.",
+                "titlePlaceholder": "...",
+                "descriptionLabel": "Escreva a descrição",
+                "descriptionPlaceholder": "...",
+                "receivedChannelId": "770718058612260904",
+                "receivedMessageText": "Nova sugestão recebida:\nSugestão feita por ${member}",
+                "receivedMessageTitle": "Sugestão:",
+                "receivedMessageDescription": "Descrição:",
+                "response": ":white_check_mark: | Sua sugestão foi enviada com sucesso!! Obrigado por colaborar conosco."
+            },
+            "announcement": {
+                "command": "anuncio",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer um anuncio!",
+                "commandDescription": "Faça seu anúncio.",
+                "receivedMessageText": "**${title}**\n${text}",
+                "receivedMessageColor": "#2986cc",
+                "titleLabel": "Titulo do anuncio",
+                "titlePlaceholder": "Digite o titulo do anuncio aqui...",
+                "descriptionLabel": "Descrição do anuncio",
+                "descriptionPlaceholder": "Digite a Descrição do anuncio aqui..."
+            },
+            "changeName": {
+                "pattern": "[${id}] ${name}"
+            },
+            "ticket": {
+                "command": "ticket",
+                "commandDescription": "Abrir um ticket para suporte!",
+                "sendChannelId": "1258387222042775653",
+                "staffRoleId": "744658469503893525",
+                "sendMessageText": "Bem vindo ao suporte!\n\nAbaixo você poderá escolher qual opção de ticket mais atende suas necessidades:",
+                "sendMessageColor": "#2986cc",
+                "notifyStaffInGame": true,
+                "notifyText": "Um novo ticket foi aberto no discord!",
+                "staffInGamePermissions": ["ticket.permissao"],
+                "ticketOpenMessage": "Seu ticket foi aberto em <#${channelId}>",
+                "options": [
+                    {
+                        "sendMessageButtonText": "Dúvidas",
+                        "sendMessageButtonEmoji": "🤔",
+                        "sendMessageButtonColor": "blue",
+                        "openChannelCartegoryId": "753105404866592788",
+                        "closeChannelCartegoryId": "975588267850354708",
+                        "allowQuotingSomeone": false,
+                        "quotingMessage": "",
+                        "NotifyStakeholdersInGame": false,
+                        "notifyText": "",
+                        "openTicketMessage": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira tirar suas duvidas logo logo!"
+                    },
+                    {
+                        "sendMessageButtonText": "Compras",
+                        "sendMessageButtonEmoji": "🛒",
+                        "sendMessageButtonColor": "green",
+                        "openChannelCartegoryId": "753105404866592788",
+                        "closeChannelCartegoryId": "975588267850354708",
+                        "allowQuotingSomeone": false,
+                        "quotingMessage": "",
+                        "NotifyStakeholdersInGame": false,
+                        "notifyText": "",
+                        "openTicketMessage": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira responder seu ticket logo logo!"
+                    },
+                    {
+                        "sendMessageButtonText": "Denúncias",
+                        "sendMessageButtonEmoji": "⛔",
+                        "sendMessageButtonColor": "red",
+                        "openChannelCartegoryId": "753105404866592788",
+                        "closeChannelCartegoryId": "975588267850354708",
+                        "allowQuotingSomeone": true,
+                        "quotingMessage": "Mencione o usuário a ser denunciado para uma resolução mais eficiente!",
+                        "NotifyStakeholdersInGame": true,
+                        "notifyText": "Voce foi mencionado em um ticket de denuncia no discord!",
+                        "openTicketMessage": "Olá a todos, este é um ticket de denuncia criado por <@${ownerId}> contra <@${someoneQuoted}>, nossa equipe ja foi informada e ira responder o ticket logo logo!\n\nPara que possamos prosseguir é necessário que <@${ownerId}> apresente suas provas e <@${someoneQuoted}> apresente seus contras."
+                    }
+                ],
+                "ticketOptions": {
+                    "answerTicket": "Atender ticket",
+                    "answerTicketMessage": "<@${staffResponsible}> agora é o responsavel pelo ticket!",
+                    "transferTicket": "Transferir responsabilidade do ticket",
+                    "transferTicketMessage": "<@${oldStaffResponsible}> passou a responsabilidade do ticket para <@${newStaffResponsible}>!",
+                    "transferQuotingMessage": "Mencione o staff para assumir a responsabilidade do ticket!",
+                    "closeTicket": "Fechar ticket",
+                    "closeTicketMessage": "O ticket foi encerrado por <@${staffResponsible}>!",
+                    "reOpenTicket": "Reabrir ticket",
+                    "reOpenTicketMessage": "O ticket foi re-aberto por <@${staffResponsible}>!",
+                    "interactionNotAllowed": "Essa interação é permitida somente para o pessoal autorizado",
+                    "NotTheResponsible": "Apenas o responsavel pelo ticket pode executar esta ação",
+                    "deleteTicket": "Deletar ticket",
+                    "deleteTicketMessage": "O ticket será deletado em instantes!",
+                    "deleteTicketCancel": "Impedir que o ticket seja deletado!",
+                    "deleteTicketCancelMessage": "<@${staff}> impediu que o ticket fosse deletado!"
+                },
+                "sendTranscriptToMembers": true,
+                "sendTranscriptToChannel": true,
+                "transcriptChannelMessage": "# transcript\n\nEste é o resumo do ticket: **${ticketName}**\nPara visualizar basta baixar e abrir esse arquivo!\n**Os envolvidos nesse ticket também receberam uma copia!**",
+                "transcriptUserMessage": "# transcript\n\nEste é o resumo do ticket: **${ticketName}**\nPara visualizar basta baixar e abrir esse arquivo!\n**Nossa equipe também recebeu uma copia deste ticket!**",
+                "transcriptChannelId": "1258394921736343704"
+            },
+            "ban": {
+                "command": "ban",
+                "commandDescription": "Digite o nome do group que você deseja listar",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "banChannelId": "1264994517128319006",
+                "userMessage": "Usuário: <@${playerDiscord}>",
+                "IdMessage": "Id: **[${playerId}]**",
+                "sendBanMessage": true,
+                "banMessage": "Foi banido permanentemente pelo funcionário: <@${staff}>\nPelo motivo: ```\n${reason}\n```",
+                "sendUnbanMessage": true,
+                "unbanMessage": "Foi besbanido pelo funcionário: <@${staff}>\nPelo motivo: ```\n${reason}\n```",
+                "banGifUrl": "https://media1.tenor.com/m/9zCgefg___cAAAAC/bane-no.gif",
+                "unbanGifUrl": "https://media1.tenor.com/m/bu5p4apZ4FwAAAAC/kikimogi-kiki.gif",
+                "optionsMessages": {
+                    "addOrRemoveChoiceTitle": "acao",
+                    "addOrRemoveChoiceDescription": "Você deseja banir ou desbanir um usuário?",
+                    "userMentionTitle": "usuario",
+                    "userDescription": "Mencione um usuário para banir ou desbanir no discord",
+                    "insertIdMentionTitle": "playerid",
+                    "insertIdDescription": "Insira o id do player para banir ou desbanir no jogo",
+                    "insertReasonMentionTitle": "motivo",
+                    "insertReasonDescription": "Insira o motivo do banimento ou desbanimento",
+                    "ban": "Banir",
+                    "unban": "Desbanir",
+                    "notUserAndNotId": "Você deve selecionar um usuário ou especificar um id!"
+                }
+            },
+            "showUsersInGroup": {
+                "command": "vgroup",
+                "commandDescription": "Digite o nome do group que você deseja listar",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "titleLabel": "Digite o nome do group que você deseja listar",
+                "titlePlaceholder": "Admin",
+                "message": "**Lista de ids no grupo ${group}:**"
+            },
+            "showUserGroups": {
+                "command": "vgroups",
+                "commandDescription": "Digite o id do player que você deseja listar",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "titleLabel": "Digite o id do player que você deseja listar",
+                "titlePlaceholder": "1",
+                "message": "**Lista de grupos do id ${playerId}:**"
+            },
+            "addAndRemoveGroupsAndRoles": {
+                "command": "group",
+                "commandDescription": "Adicione ou remova um grupo in-game e ou cargos no discord de um jogador",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "blackListGroups": {
+                    "Owner": { "bypassRoles": ["755308516264247298"] },
+                    "Admin": { "bypassRoles": ["755308516264247298"] },
+                    "Mod": { "bypassRoles": ["755308516264247298"] },
+                    "Suporte": { "bypassRoles": ["755308516264247298"] }
+                },
+                "blackListRoles": {
+                    "744658469503893525": { "bypassRoles": ["755308516264247298"] }
+                },
+                "optionsMessages": {
+                    "addOrRemoveChoiceTitle": "acao",
+                    "addOrRemoveChoiceDescription": "Você deseja adicionar ou remover grupos e cargos?",
+                    "userMentionTitle": "usuario",
+                    "userDescription": "Mencione um usuário para adicionar ou remover cargos",
+                    "insertIdMentionTitle": "playerid",
+                    "insertIdDescription": "Insira o id do player para adicionar ou remover grupos",
+                    "addChoice": "Adicionar",
+                    "removeChoice": "Remover",
+                    "selectRoleMentionTitle": "cargo",
+                    "selectRoleDescription": "Selecione o cargo para adicionar ou remover",
+                    "selectGroupMentionTitle": "grupo",
+                    "selectGroupDescription": "Insira o grupo para adicionar ou remover",
+                    "notUserAndNotId": "Você deve selecionar um usuário ou especificar um id!",
+                    "notRole": "Ao selecionar um usuário você deve selecionar um cargo!",
+                    "notGroup": "Ao selecionar um id você deve selecionar um grupo!"
+                },
+                "addGroupSuccess": "Grupo **${group}** adicionado no id: **${playerId}**",
+                "addGroupError": "Erro ao adicionar grupo **${group}** no id: **${playerId}**",
+                "removeGroupSuccess": "Grupo **${group}** removido do id: **${playerId}**",
+                "removeGroupError": "Erro ao remover grupo **${group}** do id: **${playerId}**",
+                "addRoleSuccess": "Cargo <@&${role}> adicionado no usuário: <@${userId}>",
+                "removeRoleSuccess": "Cargo <@&${role}> removido do usuário: <@${userId}>"
+            },
+            "teleports": {
+                "command": "teleporte",
+                "commandDescription": "Teleporte um jogador para outro jogador, coordenadas, local marcado ou locais predefinidos.",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "predefinedLocates": [
+                    {
+                        "name": "Praca",
+                        "coords": [140.84,-992.97,29.37,249.02]
+                    },
+                    {
+                        "name": "Delegacia de policia",
+                        "coords": [-1095.39,-805.64,19.32,225.85]
+                    },
+                    {
+                        "name": "Hospital",
+                        "coords": [-444.52,-360.95,33.5,349.2]
+                    },
+                    {
+                        "name": "Aeroporto",
+                        "coords": [-1041.2,-2743.58,13.95,329.53]
+                    }
+                ],
+                "optionsMessages": {
+                    "teleportTypeTitle": "tipo",
+                    "teleportTypeDescription": "Escolha um tipo de teleporte",
+                    "teleportTypePlayerOption": "Para um jogador",
+                    "teleportTypeCoordsOption": "Para uma coordenada",
+                    "teleportTypeWayPointOption": "Para um way point",
+                    "teleportTypePredefinedLocateOption": "Para um local predefinido",
+                    "playerIdTitle": "Id do jogador",
+                    "playerIdDescription": "Insira o id do jogador a ser teletransportado",
+                    "playerModalTitle": "Id do segundo jogador",
+                    "playerModalDescriptionPlaceholder": "Insira o id do jogador para qual o primeiro irá",
+                    "coordsModalTitle": "Insira as coordenadas",
+                    "coordsModalDescriptionPlaceholder": "x,y,z ou x,y,z,h",
+                    "locateModalTitle": "insira uma opção para teleportar o jogador"
+                },
+                "player1Offline": "O jogador a ser teleportado não existe ou não está online!",
+                "player2Offline": "O jogador alvo do teleporte não existe ou não está online!",
+                "errorArgsMissing": "Você deve fornecer todas as informações solicitadas!",
+                "incorrectCoords": "As coordenadas fornecidas estão incorretas!",
+                "wayPointNotFound": "Nenhuma marcação de destino foi encontrado no mapa do jogador!",
+                "locateNotFound": "O local informado não é valido!",
+                "successToTeleportPlayerToPlayer": "O jogador ${playerId} foi teletransportado para o jogador ${playerId2} com sucesso!",
+                "successToTeleportPlayerToCoords": "O jogador ${playerId} foi teletransportado para as coordenadas: `${coords}` com sucesso!",
+                "successToTeleportPlayerToWaiPoint": "O jogador ${playerId} foi teletransportado para o ponto marcado com sucesso!",
+                "successToTeleportPlayerToLocate": "O jogador ${playerId} foi teletransportado para ${locate} com sucesso!"
+            },
+            "inventory": {
+                "command": "inventario",
+                "commandDescription": "Adicione, remova ou veja itens no inventario de jogadores.",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "optionsMessages": {
+                    "inventoryActionTitle": "acao",
+                    "inventoryActionDescription": "Escolha qual ação deseja",
+                    "inventoryAdd": "Adicionar item",
+                    "inventoryRemove": "Remover item",
+                    "inventoryGet": "Ver lista de itens",
+                    "playerIdTitle": "Id do jogador",
+                    "playerIdDescription": "Insira o id do jogador para executar a ação.",
+                    "itemTitle": "item",
+                    "itemDescription": "Insira um item para ser adicionado ou removido.",
+                    "amountTitle": "quantidade",
+                    "amountDescription": "Insira a quantidade a ser adicionada ou removida."
+                },
+                "successToAdd": "**${amount}x ${item}** Adicionados ao id: **${playerId}**",
+                "successToRemove": "**${amount}x ${item}** Removido do id: **${playerId}**",
+                "errorToRemove": "O id: **${playerId}** não possui: **${amount}x ${item}**",
+                "sendItemList": "items no inventario do jogador id: **${playerId}**\n\n```\n${itemsList}```",
+                "amountError": "A quantidade especificada não é valida!"
+            },
+            "metabolism": {
+                "command": "metabolismo",
+                "commandDescription": "Adicione ou remova vida, colete, fome, sede e stress tudo em um so lugar!",
+                "allowedRoles": ["744658469503893525"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "optionsMessages": {
+                    "metabolismActionTitle": "acao",
+                    "metabolismActionDescription": "Escolha um metabolismo para alterar",
+                    "health": "Vida",
+                    "armour": "Colete",
+                    "hunger": "Fome",
+                    "thirst": "Sede",
+                    "stress": "Estresse",
+                    "playerIdTitle": "Id do jogador",
+                    "playerIdDescription": "Insira o id do jogador para executar a ação.",
+                    "amountTitle": "quantidade",
+                    "amountDescription": "Insira a quantidade para substituição."
+                },
+                "setHealth": "Vida do jogador: **${playerId}** alterada para: **${amount}**!",
+                "setArmour": "Colete do jogador: **${playerId}** alterado para: **${amount}**!",
+                "setHunger": "Fome do jogador: **${playerId}** alterado para: **${amount}**!",
+                "setThirst": "Sede do jogador: **${playerId}** alterada para: **${amount}**!",
+                "setStress": "Estresse do jogador: **${playerId}** alterado para: **${amount}**!",
+                "amountError": "A quantidade especificada não é valida!"
+            }
+        }
+    },
+
+    "languagePTBR": {
+    },
+
+    "languageENUS": {
+    }
+}
