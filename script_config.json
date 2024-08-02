@@ -12,21 +12,21 @@
                 "addWhitelistAfterRejoinServer": true,
                 "addNameAfterRejoinServer": true,
                 "addRolesAfterRejoinServer": true,
-                "rejoinAddRoles": ["891622737519472680"],
-                "rejoinRemoveRoles": ["891620275819536415","1250443334573625354"],
-                "setDefaultNameInNewMembers": true,
+                "rejoinAddRoles": ["0000000000000000000"],
+                "rejoinRemoveRoles": ["0000000000000000000","0000000000000000000"],
+                "setDefaultNameInNewMembers": false,
                 "defaultName": "Individuo Indigente",
                 "setDefaultRolesInNewMembers": true,
-                "defaultRoles": ["891620275819536415"]
+                "defaultRoles": ["0000000000000000000"]
             },
             "whitelist": {
                 "command": "whitelist",
                 "commandDescription": "Liberar id no servidor!",
                 "locate": 2,
                 "mode": 3,
-                "startChannelId": "1250437185551859833",
-                "sendChannelId": "1250437211900346479",
-                "statusChannelId": "1250437254074339349",
+                "startChannelId": "0000000000000000000",
+                "sendChannelId": "0000000000000000000",
+                "statusChannelId": "0000000000000000000",
                 "messageText": "**Whitelist**\n\nSeja bem-vindo à cidade!\n\n> **Para iniciar sua whitelist, basta clicar no botão abaixo**!\n\nBoa sorte!",
                 "messageColor": "#2986cc",
                 "buttonText": "Iniciar whitelist",
@@ -61,10 +61,10 @@
                 ],
                 "needPercent": 60,
                 "timeToNewAttempt": 30,
-                "addRolesAfterApproveForInterview": ["1250443334573625354"],
-                "removeRolesAfterApproveForInterview": ["891620275819536415"],
-                "addRolesAfterApprove": ["891622737519472680"],
-                "removeRolesAfterApprove": ["891620275819536415","1250443334573625354"],
+                "addRolesAfterApproveForInterview": ["0000000000000000000"],
+                "removeRolesAfterApproveForInterview": ["0000000000000000000"],
+                "addRolesAfterApprove": ["0000000000000000000"],
+                "removeRolesAfterApprove": ["0000000000000000000","0000000000000000000"],
                 "startMessageText": "**Whitelist**\n\n> Sua whitelist inicia aqui!\n\nSe o seu identificador ID corresponder a `${id}` clique em ✅ para iniciar.\nCaso contrario encerre a whitelist clicando em ❌ e contate nossa equipe!\n\nBoa sorte!",
                 "messageIdNotFound": "**Whitelist**\n\n> Não conseguimos identificar seu id vinculado a está conta do discord!\n\nEntre no jogo com uma conta nova e com o discord ativo em seu computador e vinculado ao FiveM, após tente novamente!\n\nBoa sorte!",
                 "messageServerOff": "**Whitelist**\n\n> Nosso servidor não está online no momento!\nTente novamente mais tarde!",
@@ -87,35 +87,35 @@
                 "updateMinutes": 60,
                 "roles": [
                     {
-                        "role": "1253706769629450344",
+                        "role": "0000000000000000000",
                         "groups": ["PoliciaI", "AcaoPoliciaI", "PaisanaPoliciaI", "PoliciaII", "AcaoPoliciaII", "PaisanaPoliciaII", "PoliciaIII", "AcaoPoliciaIII", "PaisanaPoliciaIII", "Policialider", "AcaoPolicialider", "PaisanaPolicialider"] 
                     },
                     {
-                        "role": "1253706923954671616",
+                        "role": "0000000000000000000",
                         "groups": ["ParamedicoI", "ParamedicoII", "ParamedicoIII", "PaisanaParamedicoI", "PaisanaParamedicoII", "PaisanaParamedicoIII", "Paramedicolider", "PaisanaParamedicolider"] 
                     },
                     {
-                        "role": "1253706939217481778",
+                        "role": "0000000000000000000",
                         "groups": ["Bombeiro", "Bombeirolider", "PaisanaBombeiro", "PaisanaBombeirolider"] 
                     },
                     {
-                        "role": "1253706943134961755",
+                        "role": "0000000000000000000",
                         "groups": ["Ballas", "Ballaslider", "Grove", "Grovelider", "Blood", "Bloodlider", "Vagos", "Vagoslider"] 
                     },
                     {
-                        "role": "1253706946226294865",
+                        "role": "0000000000000000000",
                         "groups": ["Ballas", "Ballaslider"] 
                     },
                     {
-                        "role": "1253706948986273956",
+                        "role": "0000000000000000000",
                         "groups": ["Grove", "Grovelider"] 
                     },
                     {
-                        "role": "1253706952111030323",
+                        "role": "0000000000000000000",
                         "groups": ["Blood", "Bloodlider"] 
                     },
                     {
-                        "role": "1253706968586129461",
+                        "role": "0000000000000000000",
                         "groups": ["Vagos", "Vagoslider"] 
                     }
                 ]
@@ -125,7 +125,7 @@
                 "updateMinutes": 60,
                 "orgsMessage": [
                     {   
-                        "channelId": "770718058612260904",
+                        "channelId": "0000000000000000000",
                         "preset": "Facs-1",
                         "messageTitle": "Facções disponíveis:",
                         "messageDescription": "Abaixo está a lista das facções disponíveis para serem assumidas com uma breve descrição",
@@ -159,7 +159,7 @@
                         ]
                     },
                     {   
-                        "channelId": "770718058612260904",
+                        "channelId": "0000000000000000000",
                         "preset": "Orgs-1",
                         "messageTitle": "Organizações disponíveis:",
                         "messageDescription": "Abaixo está a lista das organizações disponíveis para serem assumidas com uma breve descrição",
@@ -191,7 +191,7 @@
             "suggestion": {
                 "command": "sugerir",
                 "commandDescription": "Faça sua sugestão.",
-                "sendChannelId": "770718058612260904",
+                "sendChannelId": "0000000000000000000",
                 "sendMessageText": "**Sugestão**\n\nPara nos enviar uma sugestão, basta apertar o botão ou utilizar o comando abaixo em qualquer canal de texto\n\n`/sugerir`",
                 "sendMessageColor": "#2986cc",
                 "sendMessageButtonText": "Sugerir",
@@ -200,7 +200,7 @@
                 "titlePlaceholder": "...",
                 "descriptionLabel": "Escreva a descrição",
                 "descriptionPlaceholder": "...",
-                "receivedChannelId": "770718058612260904",
+                "receivedChannelId": "0000000000000000000",
                 "receivedMessageText": "Nova sugestão recebida:\nSugestão feita por ${member}",
                 "receivedMessageTitle": "Sugestão:",
                 "receivedMessageDescription": "Descrição:",
@@ -208,7 +208,7 @@
             },
             "announcement": {
                 "command": "anuncio",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer um anuncio!",
                 "commandDescription": "Faça seu anúncio.",
                 "receivedMessageText": "**${title}**\n${text}",
@@ -225,7 +225,7 @@
                 "command": "ticket",
                 "commandDescription": "Abrir um ticket para suporte!",
                 "sendChannelId": "1258387222042775653",
-                "staffRoleId": "744658469503893525",
+                "staffRoleId": "0000000000000000000",
                 "sendMessageText": "Bem vindo ao suporte!\n\nAbaixo você poderá escolher qual opção de ticket mais atende suas necessidades:",
                 "sendMessageColor": "#2986cc",
                 "notifyStaffInGame": true,
@@ -237,37 +237,43 @@
                         "sendMessageButtonText": "Dúvidas",
                         "sendMessageButtonEmoji": "🤔",
                         "sendMessageButtonColor": "blue",
-                        "openChannelCartegoryId": "753105404866592788",
-                        "closeChannelCartegoryId": "975588267850354708",
+                        "openChannelCartegoryId": "0000000000000000000",
+                        "closeChannelCartegoryId": "0000000000000000000",
                         "allowQuotingSomeone": false,
                         "quotingMessage": "",
+                        "skipQuotingMessage": "",
                         "NotifyStakeholdersInGame": false,
                         "notifyText": "",
-                        "openTicketMessage": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira tirar suas duvidas logo logo!"
+                        "openTicketMessage": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira tirar suas duvidas logo logo!",
+                        "openTicketMessageNotQuoting": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira tirar suas duvidas logo logo!"
                     },
                     {
                         "sendMessageButtonText": "Compras",
                         "sendMessageButtonEmoji": "🛒",
                         "sendMessageButtonColor": "green",
-                        "openChannelCartegoryId": "753105404866592788",
-                        "closeChannelCartegoryId": "975588267850354708",
+                        "openChannelCartegoryId": "0000000000000000000",
+                        "closeChannelCartegoryId": "0000000000000000000",
                         "allowQuotingSomeone": false,
                         "quotingMessage": "",
+                        "skipQuotingMessage": "",
                         "NotifyStakeholdersInGame": false,
                         "notifyText": "",
-                        "openTicketMessage": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira responder seu ticket logo logo!"
+                        "openTicketMessage": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira responder seu ticket logo logo!",
+                        "openTicketMessageNotQuoting": "Olá <@${ownerId}>, nossa equipe ja foi informada e ira responder seu ticket logo logo!"
                     },
                     {
                         "sendMessageButtonText": "Denúncias",
                         "sendMessageButtonEmoji": "⛔",
                         "sendMessageButtonColor": "red",
-                        "openChannelCartegoryId": "753105404866592788",
-                        "closeChannelCartegoryId": "975588267850354708",
+                        "openChannelCartegoryId": "0000000000000000000",
+                        "closeChannelCartegoryId": "0000000000000000000",
                         "allowQuotingSomeone": true,
                         "quotingMessage": "Mencione o usuário a ser denunciado para uma resolução mais eficiente!",
+                        "skipQuotingMessage": "Não sei quem estou denunciando. 🤔",
                         "NotifyStakeholdersInGame": true,
                         "notifyText": "Voce foi mencionado em um ticket de denuncia no discord!",
-                        "openTicketMessage": "Olá a todos, este é um ticket de denuncia criado por <@${ownerId}> contra <@${someoneQuoted}>, nossa equipe ja foi informada e ira responder o ticket logo logo!\n\nPara que possamos prosseguir é necessário que <@${ownerId}> apresente suas provas e <@${someoneQuoted}> apresente seus contras."
+                        "openTicketMessage": "Olá a todos, este é um ticket de denuncia criado por <@${ownerId}> contra <@${someoneQuoted}>, nossa equipe ja foi informada e ira responder o ticket logo logo!\n\nPara que possamos prosseguir é necessário que <@${ownerId}> apresente suas provas e <@${someoneQuoted}> apresente seus contras.",
+                        "openTicketMessageNotQuoting": "Olá a todos, este é um ticket de denuncia criado por <@${ownerId}> contra sabe-se lá quem 🤔, nossa equipe ja foi informada e ira responder o ticket logo logo!\n\nPara que possamos prosseguir é necessário que <@${ownerId}> apresente suas provas."
                     }
                 ],
                 "ticketOptions": {
@@ -291,12 +297,12 @@
                 "sendTranscriptToChannel": true,
                 "transcriptChannelMessage": "# transcript\n\nEste é o resumo do ticket: **${ticketName}**\nPara visualizar basta baixar e abrir esse arquivo!\n**Os envolvidos nesse ticket também receberam uma copia!**",
                 "transcriptUserMessage": "# transcript\n\nEste é o resumo do ticket: **${ticketName}**\nPara visualizar basta baixar e abrir esse arquivo!\n**Nossa equipe também recebeu uma copia deste ticket!**",
-                "transcriptChannelId": "1258394921736343704"
+                "transcriptChannelId": "0000000000000000000"
             },
             "ban": {
                 "command": "ban",
                 "commandDescription": "Digite o nome do group que você deseja listar",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "banChannelId": "1264994517128319006",
                 "userMessage": "Usuário: <@${playerDiscord}>",
@@ -324,7 +330,7 @@
             "showUsersInGroup": {
                 "command": "vgroup",
                 "commandDescription": "Digite o nome do group que você deseja listar",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "titleLabel": "Digite o nome do group que você deseja listar",
                 "titlePlaceholder": "Admin",
@@ -333,7 +339,7 @@
             "showUserGroups": {
                 "command": "vgroups",
                 "commandDescription": "Digite o id do player que você deseja listar",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "titleLabel": "Digite o id do player que você deseja listar",
                 "titlePlaceholder": "1",
@@ -342,16 +348,16 @@
             "addAndRemoveGroupsAndRoles": {
                 "command": "group",
                 "commandDescription": "Adicione ou remova um grupo in-game e ou cargos no discord de um jogador",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "blackListGroups": {
-                    "Owner": { "bypassRoles": ["755308516264247298"] },
-                    "Admin": { "bypassRoles": ["755308516264247298"] },
-                    "Mod": { "bypassRoles": ["755308516264247298"] },
-                    "Suporte": { "bypassRoles": ["755308516264247298"] }
+                    "Owner": { "bypassRoles": ["0000000000000000000"] },
+                    "Admin": { "bypassRoles": ["0000000000000000000"] },
+                    "Mod": { "bypassRoles": ["0000000000000000000"] },
+                    "Suporte": { "bypassRoles": ["0000000000000000000"] }
                 },
                 "blackListRoles": {
-                    "744658469503893525": { "bypassRoles": ["755308516264247298"] }
+                    "0000000000000000000": { "bypassRoles": ["0000000000000000000"] }
                 },
                 "optionsMessages": {
                     "addOrRemoveChoiceTitle": "acao",
@@ -380,7 +386,7 @@
             "teleports": {
                 "command": "teleporte",
                 "commandDescription": "Teleporte um jogador para outro jogador, coordenadas, local marcado ou locais predefinidos.",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "predefinedLocates": [
                     {
@@ -429,7 +435,7 @@
             "inventory": {
                 "command": "inventario",
                 "commandDescription": "Adicione, remova ou veja itens no inventario de jogadores.",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "optionsMessages": {
                     "inventoryActionTitle": "acao",
@@ -453,7 +459,7 @@
             "metabolism": {
                 "command": "metabolismo",
                 "commandDescription": "Adicione ou remova vida, colete, fome, sede e stress tudo em um so lugar!",
-                "allowedRoles": ["744658469503893525"],
+                "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "optionsMessages": {
                     "metabolismActionTitle": "acao",
