@@ -37,6 +37,13 @@
                 "buttonReproveEmoji": "❌",
                 "joinServerButtonMessage": "Entrar no servidor",
                 "joinServerButtonEmoji": "🎮",
+                "requsetStory": true,
+                "storyMinLength": 504,
+                "storyMessage": "Crie uma história para o seu personagem (minimo 10 linhas, não aceitamos história copiadas do google. Sugeito a reprovamento imediato!).",
+                "buttonStoryText": "Criar história.",
+                "buttonStoryEmoji": "📖",
+                "titleLabel": "Histaria do seu personagem.",
+                "titlePlaceholder": "Minimo 10 linhas...",
                 "questions": [
                     {
                         "question": "O que é power-gaming?",
@@ -78,7 +85,7 @@
                 "messageAlreadyInProgress": "**Whitelist**\n\n> Você já tem uma whitelist ativa termine-a ou aguarde 15 minutos para que ela seja encerrada automaticamente e tente novamente.",
                 "messageGameOnly": "**Whitelist**\n\n> Nossa whitelist esta sendo feita apenas no jogo no momento\nEntre agora mesmo para realiza-la!**",
                 "messageGameWait": "**Whitelist**\n\n> Nossa whitelist esta sendo feita no jogo no momento\n\nEntre agora mesmo para realiza-la!\nApós basta ficar de olho aqui no discord para saber se você foi aprovado ou tera que fazer uma entrevista.",
-                "messageWaitApprobation": "**Nova whitelist**\n\n> <@${discordId}> Esta aguardando a entrevista\n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`\n\n**Ao efetuar a entrevista aprove ou reprove o mesmo nos botões abaixo**",
+                "messageWaitApprobation": "**Nova whitelist**\n\n> <@${discordId}> Esta aguardando a entrevista\n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`\n**- Historia do personagem:** ```\n${story}```\n\n**Ao efetuar a entrevista aprove ou reprove o mesmo nos botões abaixo**",
                 "messageUserApproved": "**whitelist**\n\n> <@${discordId}> Foi aprovado no sistema de whitelist \n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`",
                 "messageUserReproved": "**whitelist**\n\n> <@${discordId}> Foi reprovado no sistema de whitelist \n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`"
             },
@@ -216,7 +223,14 @@
                 "titleLabel": "Titulo do anuncio",
                 "titlePlaceholder": "Digite o titulo do anuncio aqui...",
                 "descriptionLabel": "Descrição do anuncio",
-                "descriptionPlaceholder": "Digite a Descrição do anuncio aqui..."
+                "descriptionPlaceholder": "Digite a Descrição do anuncio aqui...",
+                "optionsMessages": {
+                    "locateTitle": "local",
+                    "locateDescription": "Escolha um local para fazer o anúncio",
+                    "discord": "discord",
+                    "game": "jogo"
+                },
+                "successWhenSending": "Anuncio envido"
             },
             "changeName": {
                 "pattern": "[${id}] ${name}"
@@ -224,7 +238,7 @@
             "ticket": {
                 "command": "ticket",
                 "commandDescription": "Abrir um ticket para suporte!",
-                "sendChannelId": "1258387222042775653",
+                "sendChannelId": "0000000000000000000",
                 "staffRoleId": "0000000000000000000",
                 "sendMessageText": "Bem vindo ao suporte!\n\nAbaixo você poderá escolher qual opção de ticket mais atende suas necessidades:",
                 "sendMessageColor": "#2986cc",
@@ -304,7 +318,7 @@
                 "commandDescription": "Digite o nome do group que você deseja listar",
                 "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
-                "banChannelId": "1264994517128319006",
+                "banChannelId": "0000000000000000000",
                 "userMessage": "Usuário: <@${playerDiscord}>",
                 "IdMessage": "Id: **[${playerId}]**",
                 "sendBanMessage": true,
@@ -434,7 +448,7 @@
             },
             "inventory": {
                 "command": "inventario",
-                "commandDescription": "Adicione, remova ou veja itens no inventario de jogadores.",
+                "commandDescription": "Adicione, remova ou veja lista de itens no inventario dos jogadores.",
                 "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "optionsMessages": {
@@ -443,6 +457,7 @@
                     "inventoryAdd": "Adicionar item",
                     "inventoryRemove": "Remover item",
                     "inventoryGet": "Ver lista de itens",
+                    "inventoryClear": "Limpar inventario",
                     "playerIdTitle": "Id do jogador",
                     "playerIdDescription": "Insira o id do jogador para executar a ação.",
                     "itemTitle": "item",
@@ -452,13 +467,14 @@
                 },
                 "successToAdd": "**${amount}x ${item}** Adicionados ao id: **${playerId}**",
                 "successToRemove": "**${amount}x ${item}** Removido do id: **${playerId}**",
+                "successToClear": "O inventario do id: **${playerId}** foi limpo!",
                 "errorToRemove": "O id: **${playerId}** não possui: **${amount}x ${item}**",
                 "sendItemList": "items no inventario do jogador id: **${playerId}**\n\n```\n${itemsList}```",
                 "amountError": "A quantidade especificada não é valida!"
             },
             "metabolism": {
                 "command": "metabolismo",
-                "commandDescription": "Adicione ou remova vida, colete, fome, sede e stress tudo em um so lugar!",
+                "commandDescription": "Adicione ou remova vida, colete, fome, sede e stress de jogadores tudo em um so lugar!",
                 "allowedRoles": ["0000000000000000000"],
                 "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
                 "optionsMessages": {
@@ -480,6 +496,52 @@
                 "setThirst": "Sede do jogador: **${playerId}** alterada para: **${amount}**!",
                 "setStress": "Estresse do jogador: **${playerId}** alterado para: **${amount}**!",
                 "amountError": "A quantidade especificada não é valida!"
+            },
+            "garage": {
+                "command": "garagem",
+                "commandDescription": "Adicione, remova ou veja a lista de veículos na garagem dos jogadores.",
+                "allowedRoles": ["0000000000000000000"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "optionsMessages": {
+                    "garageActionTitle": "acao",
+                    "garageActionDescription": "Escolha qual ação deseja",
+                    "garageAdd": "Adicionar veículo",
+                    "garageRemove": "Remover veículo",
+                    "garageGet": "Ver lista de veículo",
+                    "playerIdTitle": "Id do jogador",
+                    "playerIdDescription": "Insira o id do jogador para executar a ação.",
+                    "vehicleTitle": "veículo",
+                    "vehicleDescription": "Insira um veículo para ser adicionado ou removido."
+                },
+                "successToAdd": "**${vehicle}** Adicionados ao id: **${playerId}**",
+                "successToRemove": "**${vehicle}** Removido do id: **${playerId}**",
+                "sendVehicleList": "Veículos na garagem do jogador id: **${playerId}**\n\n```\n${vehiclesList}```"
+            },
+            "wallet": {
+                "command": "carteira",
+                "commandDescription": "Adicione, remova ou veja saldo dos jogadores.",
+                "allowedRoles": ["0000000000000000000"],
+                "notAllowedMessage": "Apenas o pessoal autorizado pode fazer isso!",
+                "optionsMessages": {
+                    "walletActionTitle": "acao",
+                    "walletActionDescription": "Escolha qual ação deseja",
+                    "walletAdd": "Adicionar dinheiro",
+                    "walletRemove": "Remover dinheiro",
+                    "walletGet": "Ver saldo",
+                    "playerIdTitle": "Id do jogador",
+                    "playerIdDescription": "Insira o id do jogador para executar a ação.",
+                    "moneyDestinyTitle": "destino",
+                    "walletDestiny": "Carteira",
+                    "bankDestiny": "Banco",
+                    "amountTitle": "quantidade",
+                    "amountDescription": "Insira a quantidade a ser adicionada ou removida."
+                },
+                "successToAdd": "**Foi adicionado $${amount} em ${destiny}** para o id: **${playerId}**",
+                "successToRemove": "**Foi Removido $${amount} de ${destiny}** do id: **${playerId}**",
+                "errorToRemove": "O id: **${playerId}** não possui: **$${amount} em ${destiny}**",
+                "sendMoneyList": "Economia do jogador id: **${playerId}**\n\nSaldo na carteira: ${walletMoney}\nSaldo em banco: ${bankMoney}",
+                "destinyError": "O destino do dinheiro não é valido!",
+                "amountError": "A quantidade especificada não é valida!" 
             }
         }
     },
