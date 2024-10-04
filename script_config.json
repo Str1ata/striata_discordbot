@@ -1,6 +1,8 @@
 {
     "scriptConfig": {
         "enableConnectionDebug": true,
+        "rejectDiscordUnlinkedConnection": true,
+        "rejectMessage": "Você precisa vincular o seu discord ao fivem/redm! Isso não é possivel utilizando a versão de navegador!!",
         "botInteractions": {
             "status": {
                 "showStatus": true,
@@ -17,7 +19,8 @@
                 "setDefaultNameInNewMembers": false,
                 "defaultName": "Individuo Indigente",
                 "setDefaultRolesInNewMembers": true,
-                "defaultRoles": ["0000000000000000000"]
+                "defaultRoles": ["0000000000000000000"],
+                "webhookLink": ""
             },
             "whitelist": {
                 "command": "whitelist",
@@ -37,7 +40,25 @@
                 "buttonReproveEmoji": "❌",
                 "joinServerButtonMessage": "Entrar no servidor",
                 "joinServerButtonEmoji": "🎮",
-                "requsetStory": true,
+                "requestStory": true,
+                "allowedSendIdforLinking": true,
+                "approvalRequiredToLinking": true,
+                "sendIdForApprobationButtonMessage": "Não consegui vincular meu discord",
+                "sendIdForApprobationButtonEmoji": "😭",
+                "linkingSendIdTitle": "Qual é o id exibido ao conectar no servidor",
+                "linkingSendIdDescriptionPlaceholder": "0",
+                "linkingSendImageUrlTitle": "Insira o url da imagem provando o seu id",
+                "linkingSendImageUrlDescriptionPlaceholder": "Recomandamos utilizar imgur.com para obter o url",
+                "linkingErrorIdAlreadyLinked": "O id inserido já está vinculado a uma conta do discord!",
+                "linkingSuccessMessage": "Seu id foi vinculado! Inicie a whitelist novamente.",
+                "linkingErrorMessage": "Houve um problema ao vinculado seu id! Verifique se o id inserido está correto e tente novamente.",
+                "linkingApproveSuccessMessage": "Id foi vinculado.",
+                "linkingApproveErrorMesage": "Houve um problema ao vinculado o id! Ja existe outro discord registrado neste id.",
+                "linkingReproveMessage": "Vinculação negada!",
+                "linkingApproveSuccessMessageToUser": "Sua solicitação para vincular o id: `${playerId}` foi aprovada!\n\nAgora você irá conseguir prosseguir com a sua whitelist, basta acessar o canal <#${startChannelId}> e clicar no botão **${buttonText}**!",
+                "linkingReproveMessageToUser": "Sua solicitação para vincular o id: `${playerId}` foi negada!\n\nVerifique se o id está correto e tente novamente!",
+                "linkingSendedMessage": "Seu id foi enviado para aprovação de vinculação, você recebera uma mensagem direta quando ele for vinculado ao seu discord.\nCertifique-se de ter as mensagens diretas publicas para que nosso bot possa lhe enviar mensagens!",
+                "linkingWaitApprobationMessage": "**Nova solicitação de vinculação do id ao discord**\n\n> <@${discordId}> Esta aguardando a vinculação do id ao discord\n\n**- Id no servidor:**`${id}`\n\n**Verifique se o id enviado na imagem corresponde ao solicitado e aprove ou reprove a vinculação nos botões abaixo**",
                 "storyMinLength": 504,
                 "storyMessage": "Crie uma história para o seu personagem (minimo 10 linhas, não aceitamos história copiadas do google. Sugeito a reprovamento imediato!).",
                 "buttonStoryText": "Criar história.",
@@ -125,7 +146,8 @@
                         "role": "0000000000000000000",
                         "groups": ["Vagos", "Vagoslider"] 
                     }
-                ]
+                ],
+                "webhookLink": ""
             },
             "allowedOrgs": {
                 "enable": true,
@@ -230,10 +252,12 @@
                     "discord": "discord",
                     "game": "jogo"
                 },
-                "successWhenSending": "Anuncio envido"
+                "successWhenSending": "Anuncio envido",
+                "webhookLink": ""
             },
             "changeName": {
-                "pattern": "[${id}] ${name}"
+                "pattern": "[${id}] ${name}",
+                "webhookLink": ""
             },
             "ticket": {
                 "command": "ticket",
@@ -251,8 +275,8 @@
                         "sendMessageButtonText": "Dúvidas",
                         "sendMessageButtonEmoji": "🤔",
                         "sendMessageButtonColor": "blue",
-                        "openChannelCartegoryId": "0000000000000000000",
-                        "closeChannelCartegoryId": "0000000000000000000",
+                        "openChannelCategoryId": "0000000000000000000",
+                        "closeChannelCategoryId": "0000000000000000000",
                         "allowQuotingSomeone": false,
                         "quotingMessage": "",
                         "skipQuotingMessage": "",
@@ -265,8 +289,8 @@
                         "sendMessageButtonText": "Compras",
                         "sendMessageButtonEmoji": "🛒",
                         "sendMessageButtonColor": "green",
-                        "openChannelCartegoryId": "0000000000000000000",
-                        "closeChannelCartegoryId": "0000000000000000000",
+                        "openChannelCategoryId": "0000000000000000000",
+                        "closeChannelCategoryId": "0000000000000000000",
                         "allowQuotingSomeone": false,
                         "quotingMessage": "",
                         "skipQuotingMessage": "",
@@ -279,8 +303,8 @@
                         "sendMessageButtonText": "Denúncias",
                         "sendMessageButtonEmoji": "⛔",
                         "sendMessageButtonColor": "red",
-                        "openChannelCartegoryId": "0000000000000000000",
-                        "closeChannelCartegoryId": "0000000000000000000",
+                        "openChannelCategoryId": "0000000000000000000",
+                        "closeChannelCategoryId": "0000000000000000000",
                         "allowQuotingSomeone": true,
                         "quotingMessage": "Mencione o usuário a ser denunciado para uma resolução mais eficiente!",
                         "skipQuotingMessage": "Não sei quem estou denunciando. 🤔",
@@ -395,7 +419,8 @@
                 "removeGroupSuccess": "Grupo **${group}** removido do id: **${playerId}**",
                 "removeGroupError": "Erro ao remover grupo **${group}** do id: **${playerId}**",
                 "addRoleSuccess": "Cargo <@&${role}> adicionado no usuário: <@${userId}>",
-                "removeRoleSuccess": "Cargo <@&${role}> removido do usuário: <@${userId}>"
+                "removeRoleSuccess": "Cargo <@&${role}> removido do usuário: <@${userId}>",
+                "webhookLink": ""
             },
             "teleports": {
                 "command": "teleporte",
@@ -425,7 +450,7 @@
                     "teleportTypeDescription": "Escolha um tipo de teleporte",
                     "teleportTypePlayerOption": "Para um jogador",
                     "teleportTypeCoordsOption": "Para uma coordenada",
-                    "teleportTypeWayPointOption": "Para um way point",
+                    "teleportTypeWayPointOption": "Para o local marcado",
                     "teleportTypePredefinedLocateOption": "Para um local predefinido",
                     "playerIdTitle": "Id do jogador",
                     "playerIdDescription": "Insira o id do jogador a ser teletransportado",
@@ -444,7 +469,8 @@
                 "successToTeleportPlayerToPlayer": "O jogador ${playerId} foi teletransportado para o jogador ${playerId2} com sucesso!",
                 "successToTeleportPlayerToCoords": "O jogador ${playerId} foi teletransportado para as coordenadas: `${coords}` com sucesso!",
                 "successToTeleportPlayerToWaiPoint": "O jogador ${playerId} foi teletransportado para o ponto marcado com sucesso!",
-                "successToTeleportPlayerToLocate": "O jogador ${playerId} foi teletransportado para ${locate} com sucesso!"
+                "successToTeleportPlayerToLocate": "O jogador ${playerId} foi teletransportado para ${locate} com sucesso!",
+                "webhookLink": ""
             },
             "inventory": {
                 "command": "inventario",
@@ -470,7 +496,8 @@
                 "successToClear": "O inventario do id: **${playerId}** foi limpo!",
                 "errorToRemove": "O id: **${playerId}** não possui: **${amount}x ${item}**",
                 "sendItemList": "items no inventario do jogador id: **${playerId}**\n\n```\n${itemsList}```",
-                "amountError": "A quantidade especificada não é valida!"
+                "amountError": "A quantidade especificada não é valida!",
+                "webhookLink": ""
             },
             "metabolism": {
                 "command": "metabolismo",
@@ -495,7 +522,8 @@
                 "setHunger": "Fome do jogador: **${playerId}** alterado para: **${amount}**!",
                 "setThirst": "Sede do jogador: **${playerId}** alterada para: **${amount}**!",
                 "setStress": "Estresse do jogador: **${playerId}** alterado para: **${amount}**!",
-                "amountError": "A quantidade especificada não é valida!"
+                "amountError": "A quantidade especificada não é valida!",
+                "webhookLink": ""
             },
             "garage": {
                 "command": "garagem",
@@ -515,7 +543,8 @@
                 },
                 "successToAdd": "**${vehicle}** Adicionados ao id: **${playerId}**",
                 "successToRemove": "**${vehicle}** Removido do id: **${playerId}**",
-                "sendVehicleList": "Veículos na garagem do jogador id: **${playerId}**\n\n```\n${vehiclesList}```"
+                "sendVehicleList": "Veículos na garagem do jogador id: **${playerId}**\n\n```\n${vehiclesList}```",
+                "webhookLink": ""
             },
             "wallet": {
                 "command": "carteira",
@@ -530,7 +559,7 @@
                     "walletGet": "Ver saldo",
                     "playerIdTitle": "Id do jogador",
                     "playerIdDescription": "Insira o id do jogador para executar a ação.",
-                    "moneyDestinyTitle": "destino",
+                    "moneyDestinyTitle": "Destino",
                     "walletDestiny": "Carteira",
                     "bankDestiny": "Banco",
                     "amountTitle": "quantidade",
@@ -541,12 +570,123 @@
                 "errorToRemove": "O id: **${playerId}** não possui: **$${amount} em ${destiny}**",
                 "sendMoneyList": "Economia do jogador id: **${playerId}**\n\nSaldo na carteira: ${walletMoney}\nSaldo em banco: ${bankMoney}",
                 "destinyError": "O destino do dinheiro não é valido!",
-                "amountError": "A quantidade especificada não é valida!" 
+                "amountError": "A quantidade especificada não é valida!",
+                "webhookLink": ""
             }
         }
     },
 
     "languagePTBR": {
+        "webhooks": {
+            "leaveAndJoinProcess": {
+                "playerLeave": "Um jogador saiu do discord e perdeu sua whitelist",
+                "playerLeaveImageUrl": "https://i.imgur.com/3cOtcgU.gif",
+                "playerReJoin": "Um jogador reentrou no discord e foi reconsedida a sua whitelist",
+                "playerReJoinImageUrl": "https://i.imgur.com/3cOtcgU.gif",
+                "playerId": "Id do jogador:",
+                "discord": "Discord do jogador:"
+            },
+            "updateRoles": {
+                "addRoleTitle": "Um jogador recebeu o cargo por ter um grupo relacionado!",
+                "addRoleImageUrl": "https://i.imgur.com/3cOtcgU.gif",
+                "removeRoleTitle": "Um jogador teve um cargo removido por não ter um grupo relacionado!",
+                "removeRoleImageUrl": "https://i.imgur.com/3cOtcgU.gif",
+                "userId": "ID:",
+                "discordId": "Discord ID:",
+                "user": "Usuário:",
+                "role": "Cargo:"
+            },
+            "announcement": {
+                "discordAnnouncementTitle": "Anuncio feito no discord!",
+                "inGameAnnouncementTitle": "Anuncio feito em jogo",
+                "discordAnnouncementImage": "https://i.imgur.com/3cOtcgU.gif",
+                "inGameAnnouncementImage": "https://i.imgur.com/3cOtcgU.gif",
+                "user": "Feito pelo usuário:",
+                "discordId": "Discord ID:",
+                "announcementText": "Texto do anuncio:",
+                "toEveryone": "Mencionou todos:",
+                "yes": "Sim",
+                "no": "Não:"
+            },
+            "changeName": {
+                "userChangeNameTitle": "Nome do usuario alterado para o mesmo do jogo!",
+                "userChangeNameImage": "https://i.imgur.com/3cOtcgU.gif",
+                "user": "Usuário:",
+                "newName": "Novo nome:"
+            },
+            "addAndRemoveGroupsAndRoles": {
+                "addGroupsAndRolesTitle": "Grupo e/ou cargos adicionados!",
+                "removeGroupsAndRolesTitle": "Grupo e/ou cargos removidos!",
+                "addGroupsAndRolesImage": "https://i.imgur.com/3cOtcgU.gif",
+                "removeGroupsAndRolesImage": "https://i.imgur.com/3cOtcgU.gif",
+                "staff": "Funcionario responsavel:",
+                "user": "Usuário:",
+                "playerId": "Id do jogador:",
+                "group": "Grupo:", 
+                "role": "Cargo:" 
+            },
+            "teleports": {
+                "teleportTitle": "Um jogador foi teleportado!",
+                "teleportImage": "https://i.imgur.com/3cOtcgU.gif",
+                "staff": "Funcionario responsavel:",
+                "playerId": "Id do jogador:",
+                "teleportTo": "Teleportou para:",
+                "toWay": "O local marcado:",
+                "toPlayerId": "O jogador id:",
+                "toCoords": "A coordenada:",
+                "toPredefinedLocate": "O local predefinido:"
+            },
+            "inventory": {
+                "inventoryAddItemTitle": "Item adicionado!",
+                "inventoryRemoveItemTitle": "Item removido!",
+                "inventoryClearTitle": "inventario limpo!",
+                "inventoryAddItemImage": "https://i.imgur.com/3cOtcgU.gif",
+                "inventoryRemoveItemImage": "https://i.imgur.com/3cOtcgU.gif",
+                "inventoryClearImage": "https://i.imgur.com/3cOtcgU.gif",
+                "staff": "Funcionario responsavel:",
+                "playerId": "Id do jogador:",
+                "oldItems": "Itens no inventario antes da limpeza:",
+                "item": "Item:",
+                "amount": "Quantidade:"
+            },
+            "metabolism": {
+                "metabolismChangeHealthTitle": "Vida alterada!",
+                "metabolismChangeArmourTitle": "Colete alterado!",
+                "metabolismChangeHungerTitle": "Fome alterada!",
+                "metabolismChangeThirstTitle": "Sede alterada!",
+                "metabolismChangeStressTitle": "Estresse alterado!",
+                "metabolismChangeHealthImage": "https://i.imgur.com/3cOtcgU.gif",
+                "metabolismChangeArmourImage": "https://i.imgur.com/3cOtcgU.gif",
+                "metabolismChangeHungerImage": "https://i.imgur.com/3cOtcgU.gif",
+                "metabolismChangeThirstImage": "https://i.imgur.com/3cOtcgU.gif",
+                "metabolismChangeStressImage": "https://i.imgur.com/3cOtcgU.gif",
+                "staff": "Funcionario responsavel:",
+                "playerId": "Id do jogador:",
+                "oldAmount": "Status antigo:",
+                "newAmount": "Status novo:"
+            },
+            "garage": {
+                "garageAddTitle": "Veiculo adicionado!",
+                "garageRemoveTitle": "Veiculo removido!",
+                "garageAddImage": "https://i.imgur.com/3cOtcgU.gif",
+                "garageRemoveImage": "https://i.imgur.com/3cOtcgU.gif",
+                "staff": "Funcionario responsavel:",
+                "playerId": "Id do jogador:",
+                "vehicle": "Veiculo:"
+            },
+            "wallet": {
+                "walletAddTitle": "Dinheiro adicionado!",
+                "walletRemoveTitle": "Dinheiro removido!",
+                "walletAddImage": "https://i.imgur.com/3cOtcgU.gif",
+                "walletRemoveImage": "https://i.imgur.com/3cOtcgU.gif",
+                "staff": "Funcionario responsavel:",
+                "playerId": "Id do jogador:",
+                "destiny": "Destino:",
+                "handDestiny": "Carteira",
+                "bankDestiny": "Banco",
+                "amount": "Quantidade:"
+            }
+        }
     },
 
     "languageENUS": {
