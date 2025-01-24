@@ -2,7 +2,7 @@
     "scriptConfig": {
         "enableConnectionDebug": true,
         "rejectDiscordUnlinkedConnection": true,
-        "rejectMessage": "Você precisa vincular o seu discord ao fivem/redm! Isso não é possivel utilizando a versão de navegador!!",
+        "rejectMessage": "Você precisa vincular o seu discord ao FiveM/RedM! Isso não é possível utilizando a versão de navegador!!",
         "botInteractions": {
             "status": {
                 "showStatus": true,
@@ -41,30 +41,30 @@
                 "joinServerButtonMessage": "Entrar no servidor",
                 "joinServerButtonEmoji": "🎮",
                 "requestStory": true,
-                "allowedSendIdforLinking": true,
+                "allowedSendIdForLinking": true,
                 "approvalRequiredToLinking": true,
                 "sendIdForApprobationButtonMessage": "Não consegui vincular meu discord",
                 "sendIdForApprobationButtonEmoji": "😭",
                 "linkingSendIdTitle": "Qual é o id exibido ao conectar no servidor",
                 "linkingSendIdDescriptionPlaceholder": "0",
                 "linkingSendImageUrlTitle": "Insira o url da imagem provando o seu id",
-                "linkingSendImageUrlDescriptionPlaceholder": "Recomandamos utilizar imgur.com para obter o url",
+                "linkingSendImageUrlDescriptionPlaceholder": "Recomendamos utilizar imgur.com para obter o url",
                 "linkingErrorIdAlreadyLinked": "O id inserido já está vinculado a uma conta do discord!",
                 "linkingSuccessMessage": "Seu id foi vinculado! Inicie a whitelist novamente.",
                 "linkingErrorMessage": "Houve um problema ao vinculado seu id! Verifique se o id inserido está correto e tente novamente.",
                 "linkingApproveSuccessMessage": "Id foi vinculado.",
-                "linkingApproveErrorMesage": "Houve um problema ao vinculado o id! Ja existe outro discord registrado neste id.",
+                "linkingApproveErrorMessage": "Houve um problema ao vinculado o id! Ja existe outro discord registrado neste id.",
                 "linkingReproveMessage": "Vinculação negada!",
                 "linkingApproveSuccessMessageToUser": "Sua solicitação para vincular o id: `${playerId}` foi aprovada!\n\nAgora você irá conseguir prosseguir com a sua whitelist, basta acessar o canal <#${startChannelId}> e clicar no botão **${buttonText}**!",
                 "linkingReproveMessageToUser": "Sua solicitação para vincular o id: `${playerId}` foi negada!\n\nVerifique se o id está correto e tente novamente!",
                 "linkingSendedMessage": "Seu id foi enviado para aprovação de vinculação, você recebera uma mensagem direta quando ele for vinculado ao seu discord.\nCertifique-se de ter as mensagens diretas publicas para que nosso bot possa lhe enviar mensagens!",
                 "linkingWaitApprobationMessage": "**Nova solicitação de vinculação do id ao discord**\n\n> <@${discordId}> Esta aguardando a vinculação do id ao discord\n\n**- Id no servidor:**`${id}`\n\n**Verifique se o id enviado na imagem corresponde ao solicitado e aprove ou reprove a vinculação nos botões abaixo**",
                 "storyMinLength": 504,
-                "storyMessage": "Crie uma história para o seu personagem (minimo 10 linhas, não aceitamos história copiadas do google. Sugeito a reprovamento imediato!).",
+                "storyMessage": "Crie uma história para o seu personagem (mínimo 10 linhas, não aceitamos história copiadas do google. Sujeito a reprovamento imediato!).",
                 "buttonStoryText": "Criar história.",
                 "buttonStoryEmoji": "📖",
-                "titleLabel": "Histaria do seu personagem.",
-                "titlePlaceholder": "Minimo 10 linhas...",
+                "titleLabel": "história do seu personagem.",
+                "titlePlaceholder": "Mínimo 10 linhas...",
                 "questions": [
                     {
                         "question": "O que é power-gaming?",
@@ -165,25 +165,25 @@
                                 "groups": [ "Ballas", "Ballaslider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Ballas",
-                                "description": "Facção responsavel pela produção e distribuição de #maconha"
+                                "description": "Facção responsável pela produção e distribuição de #maconha"
                             },
                             {
                                 "groups": [ "Grove", "Grovelider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Grove",
-                                "description": "Facção responsavel pela produção e distribuição de #metanfetamina"
+                                "description": "Facção responsável pela produção e distribuição de #metanfetamina"
                             },
                             {
                                 "groups": [ "Blood", "Bloodlider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Blood",
-                                "description": "Facção responsavel pela produção e distribuição de #lsd"
+                                "description": "Facção responsável pela produção e distribuição de #lsd"
                             },
                             {
                                 "groups": [ "Vagos", "Vagoslider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Vagos",
-                                "description": "Facção responsavel pela produção e distribuição de #cocaína"
+                                "description": "Facção responsável pela produção e distribuição de #cocaína"
                             }
                         ]
                     },
@@ -199,19 +199,19 @@
                                 "groups": [ "PoliciaI", "AcaoPoliciaI", "PaisanaPoliciaI", "PoliciaII", "AcaoPoliciaII", "PaisanaPoliciaII", "PoliciaIII", "AcaoPoliciaIII", "PaisanaPoliciaIII", "Policialider", "AcaoPolicialider", "PaisanaPolicialider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Departamento de polícia",
-                                "description": "O departamento de polícia é responsavel por estabelecer a ondem na cidade."
+                                "description": "O departamento de polícia é responsável por estabelecer a ondem na cidade."
                             },
                             {
                                 "groups": [ "ParamedicoI", "ParamedicoII", "ParamedicoIII", "PaisanaParamedicoI", "PaisanaParamedicoII", "PaisanaParamedicoIII", "Paramedicolider", "PaisanaParamedicolider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Hospital",
-                                "description": "O hospital é responsavel pela internação e tratamento de doentes ou de feridos"
+                                "description": "O hospital é responsável pela internação e tratamento de doentes ou de feridos"
                             },
                             {
                                 "groups": [ "Bombeiro", "Bombeirolider", "PaisanaBombeiro", "PaisanaBombeirolider"],
                                 "fromNumberOfMembers": 0,
                                 "exhibitName": "Corpo de bombeiros",
-                                "description": "O corpo de bombeiros é responsavel pela prevenção e Combate a Incêndios, Buscas, Salvamentos e Socorros Públicos"
+                                "description": "O corpo de bombeiros é responsável pela prevenção e Combate a Incêndios, Buscas, Salvamentos e Socorros Públicos"
                             }
                         ]
                     }
@@ -316,7 +316,7 @@
                 ],
                 "ticketOptions": {
                     "answerTicket": "Atender ticket",
-                    "answerTicketMessage": "<@${staffResponsible}> agora é o responsavel pelo ticket!",
+                    "answerTicketMessage": "<@${staffResponsible}> agora é o responsável pelo ticket!",
                     "transferTicket": "Transferir responsabilidade do ticket",
                     "transferTicketMessage": "<@${oldStaffResponsible}> passou a responsabilidade do ticket para <@${newStaffResponsible}>!",
                     "transferQuotingMessage": "Mencione o staff para assumir a responsabilidade do ticket!",
@@ -325,7 +325,7 @@
                     "reOpenTicket": "Reabrir ticket",
                     "reOpenTicketMessage": "O ticket foi re-aberto por <@${staffResponsible}>!",
                     "interactionNotAllowed": "Essa interação é permitida somente para o pessoal autorizado",
-                    "NotTheResponsible": "Apenas o responsavel pelo ticket pode executar esta ação",
+                    "NotTheResponsible": "Apenas o responsável pelo ticket pode executar esta ação",
                     "deleteTicket": "Deletar ticket",
                     "deleteTicketMessage": "O ticket será deletado em instantes!",
                     "deleteTicketCancel": "Impedir que o ticket seja deletado!",
@@ -581,7 +581,7 @@
             "leaveAndJoinProcess": {
                 "playerLeave": "Um jogador saiu do discord e perdeu sua whitelist",
                 "playerLeaveImageUrl": "https://i.imgur.com/3cOtcgU.gif",
-                "playerReJoin": "Um jogador reentrou no discord e foi reconsedida a sua whitelist",
+                "playerReJoin": "Um jogador reentrou no discord e foi re-concedida a sua whitelist",
                 "playerReJoinImageUrl": "https://i.imgur.com/3cOtcgU.gif",
                 "playerId": "Id do jogador:",
                 "discord": "Discord do jogador:"
@@ -609,7 +609,7 @@
                 "no": "Não:"
             },
             "changeName": {
-                "userChangeNameTitle": "Nome do usuario alterado para o mesmo do jogo!",
+                "userChangeNameTitle": "Nome do usuário alterado para o mesmo do jogo!",
                 "userChangeNameImage": "https://i.imgur.com/3cOtcgU.gif",
                 "user": "Usuário:",
                 "newName": "Novo nome:"
@@ -619,7 +619,7 @@
                 "removeGroupsAndRolesTitle": "Grupo e/ou cargos removidos!",
                 "addGroupsAndRolesImage": "https://i.imgur.com/3cOtcgU.gif",
                 "removeGroupsAndRolesImage": "https://i.imgur.com/3cOtcgU.gif",
-                "staff": "Funcionario responsavel:",
+                "staff": "Funcionário responsável:",
                 "user": "Usuário:",
                 "playerId": "Id do jogador:",
                 "group": "Grupo:", 
@@ -628,7 +628,7 @@
             "teleports": {
                 "teleportTitle": "Um jogador foi teleportado!",
                 "teleportImage": "https://i.imgur.com/3cOtcgU.gif",
-                "staff": "Funcionario responsavel:",
+                "staff": "Funcionário responsável:",
                 "playerId": "Id do jogador:",
                 "teleportTo": "Teleportou para:",
                 "toWay": "O local marcado:",
@@ -643,7 +643,7 @@
                 "inventoryAddItemImage": "https://i.imgur.com/3cOtcgU.gif",
                 "inventoryRemoveItemImage": "https://i.imgur.com/3cOtcgU.gif",
                 "inventoryClearImage": "https://i.imgur.com/3cOtcgU.gif",
-                "staff": "Funcionario responsavel:",
+                "staff": "Funcionário responsável:",
                 "playerId": "Id do jogador:",
                 "oldItems": "Itens no inventario antes da limpeza:",
                 "item": "Item:",
@@ -660,7 +660,7 @@
                 "metabolismChangeHungerImage": "https://i.imgur.com/3cOtcgU.gif",
                 "metabolismChangeThirstImage": "https://i.imgur.com/3cOtcgU.gif",
                 "metabolismChangeStressImage": "https://i.imgur.com/3cOtcgU.gif",
-                "staff": "Funcionario responsavel:",
+                "staff": "Funcionário responsável:",
                 "playerId": "Id do jogador:",
                 "oldAmount": "Status antigo:",
                 "newAmount": "Status novo:"
@@ -670,7 +670,7 @@
                 "garageRemoveTitle": "Veiculo removido!",
                 "garageAddImage": "https://i.imgur.com/3cOtcgU.gif",
                 "garageRemoveImage": "https://i.imgur.com/3cOtcgU.gif",
-                "staff": "Funcionario responsavel:",
+                "staff": "Funcionário responsável:",
                 "playerId": "Id do jogador:",
                 "vehicle": "Veiculo:"
             },
@@ -679,7 +679,7 @@
                 "walletRemoveTitle": "Dinheiro removido!",
                 "walletAddImage": "https://i.imgur.com/3cOtcgU.gif",
                 "walletRemoveImage": "https://i.imgur.com/3cOtcgU.gif",
-                "staff": "Funcionario responsavel:",
+                "staff": "Funcionário responsável:",
                 "playerId": "Id do jogador:",
                 "destiny": "Destino:",
                 "handDestiny": "Carteira",
