@@ -34,6 +34,14 @@
                 "messageColor": "#2986cc",
                 "buttonText": "Iniciar whitelist",
                 "buttonEmoji": "📋",
+                "buttonSkipText": "Pular whitelist",
+                "buttonSkipEmoji": "⏭️",
+                "skipTitleLabel": "Codigo de whitelist.",
+                "skipTitlePlaceholder": "Digite seu codigo aqui...",
+                "codes": {
+                    "j3o6n8l9x9z1v3n4d2z9d2n7k5l6i2u0": false,
+                    "freewl0x448562588654984912954941": true
+                },
                 "buttonApproveText": "Aprovar",
                 "buttonApproveEmoji": "✅",
                 "buttonReproveText": "Reprovar",
@@ -65,6 +73,13 @@
                 "buttonStoryEmoji": "📖",
                 "titleLabel": "história do seu personagem.",
                 "titlePlaceholder": "Mínimo 10 linhas...",
+                "buttonWrittenQuestionText": "Responder pergunta.",
+                "buttonWrittenQuestionEmoji": "📝",
+                "writtenQuestionTitleLabel": "Sua resposta.",
+                "writtenQuestionTitlePlaceholder": "Apenas respostas curtas...",
+                "enableApproveObservation": true,
+                "enableReproveObservation": true,
+                "observationLabel": "Observações:",
                 "questions": [
                     {
                         "question": "O que é power-gaming?",
@@ -87,6 +102,13 @@
                         }
                     }
                 ],
+                "writtenQuestions": [
+                    "Qual seu mome e idade real?",
+                    "Por qual motivo você deseja ser aprovado na Striata Shop?",
+                    "Quais são os seus planos para o primeiro dia?",
+                    "Você esta em uma rodovia sentido norte, quando um individuo na contra mão colide no seu veiculo, fazendo com que você capote. O que você faria a seguir?",
+                    "Você esta em uma rodovia sentido norte, quando um individuo na contra mão colide no seu veiculo, fazendo com que você capote. O que você faria a seguir?"
+                ],
                 "needPercent": 60,
                 "timeToNewAttempt": 30,
                 "addRolesAfterApproveForInterview": ["0000000000000000000"],
@@ -95,6 +117,7 @@
                 "removeRolesAfterApprove": ["0000000000000000000","0000000000000000000"],
                 "startMessageText": "**Whitelist**\n\n> Sua whitelist inicia aqui!\n\nSe o seu identificador ID corresponder a `${id}` clique em ✅ para iniciar.\nCaso contrario encerre a whitelist clicando em ❌ e contate nossa equipe!\n\nBoa sorte!",
                 "messageIdNotFound": "**Whitelist**\n\n> Não conseguimos identificar seu id vinculado a está conta do discord!\n\nEntre no jogo com uma conta nova e com o discord ativo em seu computador e vinculado ao FiveM, após tente novamente!\n\nBoa sorte!",
+                "messageInvalidCode": "**Whitelist**\n\n> Você forneceu um código de whitelist invalido!\nVerifique e tente novamente!",
                 "messageServerOff": "**Whitelist**\n\n> Nosso servidor não está online no momento!\nTente novamente mais tarde!",
                 "messageTimeExceeded": "**Whitelist**\n\n> O tempo limite de 15 minutos para realizar a whitelist foi excedido e sua whitelist foi encerrada!\nTente novamente e seja mais rápido!",
                 "messageNotFinded": "**Whitelist**\n\n> Sua whitelist não foi encontrada ou não foi iniciada\nPor favor inicie novamente!",
@@ -106,7 +129,7 @@
                 "messageAlreadyInProgress": "**Whitelist**\n\n> Você já tem uma whitelist ativa termine-a ou aguarde 15 minutos para que ela seja encerrada automaticamente e tente novamente.",
                 "messageGameOnly": "**Whitelist**\n\n> Nossa whitelist esta sendo feita apenas no jogo no momento\nEntre agora mesmo para realiza-la!**",
                 "messageGameWait": "**Whitelist**\n\n> Nossa whitelist esta sendo feita no jogo no momento\n\nEntre agora mesmo para realiza-la!\nApós basta ficar de olho aqui no discord para saber se você foi aprovado ou tera que fazer uma entrevista.",
-                "messageWaitApprobation": "**Nova whitelist**\n\n> <@${discordId}> Esta aguardando a entrevista\n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`\n**- Historia do personagem:** ```\n${story}```\n\n**Ao efetuar a entrevista aprove ou reprove o mesmo nos botões abaixo**",
+                "messageWaitApprobation": "**Nova whitelist**\n\n> <@${discordId}> Esta aguardando a entrevista\n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`\n**- Respostas do questionário escrito:**\n${writtenQuestion}\n**- Historia do personagem:** ```\n${story}```\n\n**Ao efetuar a entrevista aprove ou reprove o mesmo nos botões abaixo**",
                 "messageUserApproved": "**whitelist**\n\n> <@${discordId}> Foi aprovado no sistema de whitelist \n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`",
                 "messageUserReproved": "**whitelist**\n\n> <@${discordId}> Foi reprovado no sistema de whitelist \n\n**- Id no servidor:**`${id}`\n**- Porcentagem de acertos no questionário:**`${percent}%`"
             },
